@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="match.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    html {
+        scroll-behavior: smooth;
+      }
+    html, body {
+        text-align: center;
+        }
+      
+        p {text-align: left;}
+    
+        body {
+            margin: 0;
+            padding: 0;
+            background: #697281;
+            text-align: center;
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: black;
+            background-color:#679159;
+        }
+        #page
+         {
+           text-align: center;
+           margin: 0 auto 0 auto;
+           margin-top:25px;
+           display: block;
+           height:auto;
+           position: relative;
+           overflow: hidden;
+           background: #679159 url(https://www.html.am/templates/downloads/bryantsmith/greencreative/background.png) repeat-y;
+         }
+    
+    
+    
+         #header
+        {
+        background-image:url(https://www.html.am/templates/downloads/bryantsmith/greencreative/header.png);
+        background-repeat:no-repeat;
+        height:111px;
+        width:738px;
+        }
+        #headerTitle
+        {
+        position:relative;
+        left:30px;
+        top:30px;
+        color:#283823;
+        text-align:left;
+        font-size:34px;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        animation-name: greenn;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        }
+        #headerSubText
+        {
+        position:relative;
+        left:33px;
+        top:30px;
+        color:#679159;
+        text-align:left;
+        font-size:16px;
+        font-weight:bold;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+        #container
+        {
+        background-image:url(https://www.html.am/templates/downloads/bryantsmith/greencreative/bar.png);
+        background-repeat:no-repeat;
+        padding-left:20px;
+        padding-right:20px;
+        /* display: inline;*/
+        width: 500px
+        
+        }
+    
+        #container a
+        {
+        font-size:13px;
+        font-weight:bold;
+        color:white;
+        margin-left: 35px;
+    
+        }
+        #container a:hover
+        {
+        color:red;
+        font-size: 15px;
+        background: cyan;
+        }
+        .contentTitle
+        {
+        width: 676px;
+        height:37px;
+        margin-top:20px;
+        margin-left:25px;
+        margin-right:25px;
+        background-image:url(https://www.html.am/templates/downloads/bryantsmith/greencreative/tab_back.png);
+        background-repeat:no-repeat;
+    
+        }
+    
+        .contentTitle h1
+        {
+        margin-left:21px;
+        padding-top:8px;
+        font-size:17px;
+        font-weight:bold;
+        color:#071027;
+    
+        }
+    
+        .contentText
+        {
+        width:680px;
+        padding-left:30px;
+        padding-right:30px;
+        font-size:13px;
+        color:#030712;
+        line-height:30px;
+    
+        }
+        a
+        {
+        text-decoration:none;
+        color:#152413;
+        }
+    
+        .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    
+    
+    
+    
+     .tool {
+      position: fixed;
+      display: inline-block;
+      background: chartreuse;
+      margin-right: 100px;
+    }
+    
+    
+    .tool .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+     
+      position: fixed;
+      z-index: 1;
+    }
+    
+    .tool:hover .tooltiptext {
+      visibility: visible;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        #footer {
+        width: 738px;
+        height:53px;
+        background: url(https://www.html.am/templates/downloads/bryantsmith/greencreative/footer.png) no-repeat;
+        text-align:center;
+        font-size:9px;
+        color:#152413;
+        padding-top:38px;
+        }
+        .contentText{
+      margin-top: 15px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .contentet{
+      text-align: center;
+      margin-right: 300px;
+    }
+    
+    #page{
+      margin-right: 250px;
+    }
+    
+    
+    
+    #container{
+      display: grid;
+      grid-template-columns: repeat(7,1fr);
+    
+    }
+    
+    a{
+      text-align: center;
+      padding: 5px;
+      border-radius: 2px;
+      background-color: rgb(12, 53, 12);
+      color: antiquewhite;
+    }
+    
+    @keyframes greenn {
+      0%{
+        color: yellow;
+      }
+      25%{
+        color: darkblue;
+        margin-left: 20px;
+      }
+      75%{
+        color: cyan;
+        margin-left: 100px;
+      }
+      100%{
+        color: blueviolet;
+        margin-left: 150px;
+    
+      }
+    }
+    
+    @media (max-width:850px){
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+      #container{
+        width: 450px;
+      }
+      #container{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+      }
+      .contentText{
+        width: 450px;
+      }
+      #headerSubText{
+        width: 500px;
+      }
+      #page{
+        width: 500px;
+        z-index: 1;
+        margin: 0 auto 0 auto;
+        margin-top:25px;
+        display: block;
+        height:auto;
+        position: relative;
+        overflow: hidden;
+        background: #679159 url(https://www.html.am/templates/downloads/bryantsmith/greencreative/background.png) repeat-y;
+      }
+      .contentText p{
+        font-size: 20px;
+      }
+      #footer{
+        margin: 0px;
+        width: 500px;
+        position: relative;
+      }
+    }
+      </style>
+    
+  
+
+
+<body>
+  <div id="page">
+
+    <div id="header">
+      <div id="headerTitle">Green Creative</div>
+        <div id="headerSubText">Inspired by Creative Commons, licensed under Creative Commons.</div>
+
+    </div>
+
+  <div id="container">
+    <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#portfolio">portfolio</a>
+      <a href="#prices">prices</a>
+      <a href="#products">products</a>
+      <a href="#faq">faq</a>
+      <a href="#contact">contact</a>
+</div>
+
+<div class="tool">Tooltip final step
+  <span class="tooltiptext">Hope I meet all the expectations and have an A as a grade </span>
+</div>
+
+<div class="contentet"> <div class="dropdown"><span> See all the h1 tags</span> <div class="dropdown-content"><p>Home</p><br>
+  <p>About</p><br>
+  <p>Portfolio</p><br>
+  <p>Prices</p><br>
+  <p>Contact</p><br>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+<div id="home" class="contentTitle">
+  <h1>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Home </button></h1>
+  
+    </div>
+    <div  class="contentText">
+      <p>You may use this template on any site, anywhere, for free just please leave the link back to me in the footer. This template validates XHTML Strict 1.0, CSS Validates as well; enjoy :) </p>
+      <p>&nbsp;</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer mi. Vivamus sit amet neque vitae sapien bibendum sodales. Curabitur elementum. Duis imperdiet. Donec eleifend porttitor sapien. Praesent leo. Quisque auctor velit sed tellus. Suspendisse potenti. Aenean laoreet imperdiet nunc. Donec commodo suscipit dolor. Aenean nibh. Sed id odio. Aliquam lobortis risus ut felis. Sed vehicula pellentesque quam.</p>
+      <p>&nbsp;</p>
+      <p><a href="index.html">(read more)</a></p>
+    </div>
+  
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+    <div class="container">
+  
+  
+  
+        
+  
+          <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Home</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>You may use this template on any site, anywhere, for free just please leave the link back to me in the footer. This template validates XHTML Strict 1.0, CSS Validates as well; enjoy :) </p>
+                          <p>&nbsp;</p>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer mi. Vivamus sit amet neque vitae sapien bibendum sodales. Curabitur elementum. Duis imperdiet. Donec eleifend porttitor sapien. Praesent leo. Quisque auctor velit sed tellus. Suspendisse potenti. Aenean laoreet imperdiet nunc. Donec commodo suscipit dolor. Aenean nibh. Sed id odio. Aliquam lobortis risus ut felis. Sed vehicula pellentesque quam.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html">(read more)</a></p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+          <div id="about" class="contentTitle"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">About</button></div>
+          <div  class="contentText">
+            <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+            <p>&nbsp;</p>
+            <p><a href="index.html">(read more)</a></p>
+          </div>
+  
+            <div class="container">
+  
+          <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">About</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html">(read more)</a></p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+              </div>
+  
+  
+  
+  
+  
+  
+  
+  
+          <div id="portfolio" class="contentTitle"><h1><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3"> Portfolio </button></h1></div>
+          <div  class="contentText">
+            <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+            <p>&nbsp;</p>
+            <p><a href="index.html">(read more)</a></p>
+          </div>
+  
+          <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Portfolio</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html">(read more)</a></p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+  
+            <div id="prices" class="contentTitle"><h1><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Prices</button></h1></div>
+          <div  class="contentText">
+            <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+            <p>&nbsp;</p>
+            <p><a href="index.html">(read more)</a></p>
+          </div>
+  
+  
+          <div class="modal fade" id="myModal4" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Prices</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html">(read more)</a></p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+  
+            <div id="products" class="contentTitle"><h1><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5">Products </button></h1></div>
+          <div  class="contentText">
+            <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+            <p>&nbsp;</p>
+            <p><a href="index.html">(read more)</a></p>
+          </div>
+  
+          <div class="modal fade" id="myModal5" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Products</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html">(read more)</a></p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+             <div id="faq" class="contentTitle"><h1><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal6">FAQ</button></h1></div>
+          <div  class="contentText">
+            <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+            <p>&nbsp;</p>
+            <p><a href="index.html">(read more)</a></p>
+          </div>
+  
+          <div class="modal fade" id="myModal6" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">FAQ</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html">(read more)</a></p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+          <div id="contact" class="contentTitle"><h1><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal7">Contact</button</h1></div>
+          <div  class="contentText">
+            <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+            <p>&nbsp;</p>
+            <p><a href="index.html">(read more)</a></p>
+          </div>
+  
+          <div class="modal fade" id="myModal7" role="dialog">
+              <div class="modal-dialog">
+  
+             <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Contact</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div  class="contentText">
+                          <p>This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out This particular template goes not have a naviagation panel; it was intended for simple sites.   I am also making a version of this template with navigation, check out <a href="http://www.bryantsmith.com">BryantSmith.com</a> to get it.</p>
+                          <p>&nbsp;</p>
+                          <p><a href="index.html"> <div class="tooltip"> (read more) <span class="tooltiptext">Tooltip text</span>  </div></a></p>
+                        </div>
+                      </div>
+
+                      <div class="tooltip">Tooltip final step, Final exam
+                        <span class="tooltiptext">Hope I meet all the expectations</span>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+  
+  <div>
+          <div class="contentText"> Each title is an H1 tag, so choose them carefully :)</div>
+  </div>
+  
+
+
+
+  </div>
+  
+  
+          <div id="footer"><a href="http://www.aszx.net">    web development   </a> by <a href="http://www.bryantsmith.com">bryant smith</a></div>
+  
+  
+          <script>
+  
+            let mainNavLinks = document.querySelectorAll("#container a");
+  
+            window.addEventListener("scroll", event => {
+  
+              let fromTop = window.scrollY+5;
+  
+              mainNavLinks.forEach(link => {
+              let section = document.querySelector(link.hash);
+  
+              if (
+                section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+              ) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");
+              }
+              });
+            });
+          </script>
+</body>
+</html>
+
